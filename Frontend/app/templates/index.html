@@ -1,11 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica 3</title>
+    <title>Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Práctica 3</h1>
+
+<body class="flex h-screen">
+    <!-- Incluir el sidebar -->
+    {% include 'sidebar.html' %}
+
+    <!-- Contenido principal -->
+    <main role="main" class="flex-1 overflow-hidden bg-gray-100 dark:bg-gray-900 p-8">
+        <section class="text-center">
+            <h1 class="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-300">Super Autos GT</h1>
+            <p class="text-blue-300">Selecciona una opción del menú para continuar.</p>
+        </section>
+    </main>
 </body>
 </html>
